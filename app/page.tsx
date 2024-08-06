@@ -1,13 +1,14 @@
-import { Button } from '@/components/ui/button';
-import { Camera } from 'lucide-react';
+import Logo from '../components/Logo';
+import Link from 'next/link';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   return (
-    <div className=' flex h-screen items-center justify-center'>
-      <Button>default button</Button>
-      <Button variant='outline' size='icon'>
-        <Camera />
-      </Button>
-    </div>
+    <main className='min-h-screen bg-gradient-to-t from-indigo-900 via-blue-700 to-blue-400'>
+      <header className='mx-48 flex justify-between p-4'>
+        <Logo />
+        <Navbar />
+      </header>
+    </main>
   );
 }
