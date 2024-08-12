@@ -26,15 +26,18 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-background flex min-h-screen flex-col`}
       >
-        <header className='w-full shadow-sm'>
+        <header className='h-16 w-full shadow-sm'>
+          {/* Fixed height for header */}
           <Header />
         </header>
 
         <main className='flex-grow'>
+          {/* Takes remaining space */}
           <Main>{children}</Main>
         </main>
 
-        <footer className='w-full border-t border-cyan-900 p-4'>
+        <footer className='h-16 w-full border-t border-cyan-900 p-4'>
+          {/* Fixed height for footer */}
           <Footer />
         </footer>
       </body>

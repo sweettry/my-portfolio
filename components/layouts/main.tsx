@@ -10,21 +10,37 @@ type MainContentProps = {
 const Main = ({ children }: MainContentProps) => {
   return (
     <div className='flex w-full flex-col'>
-      <div className='flex w-full'>
-        <div className='hidden w-1/5 lg:block'>
+      {/* Hero Section */}
+      <div className='flex w-full flex-col lg:flex-row'>
+        {/* Columns container */}
+        <div className='flex h-[calc(100vh-16rem)] w-full flex-row'>
+          {/* Left Column */}
+          <div className='hidden lg:block lg:w-1/5'>
+            <LeftColumn />
+          </div>
+
+          {/* Main Content */}
+          <section className='flex flex-1 items-center justify-center border-2 border-cyan-900 p-4 py-20 text-white'>
+            <MainContent>{children}</MainContent>
+          </section>
+
+          {/* Right Column */}
+          <div className='hidden lg:block lg:w-1/5'>
+            <RightColumn />
+          </div>
+        </div>
+      </div>
+      {/* SmallScreenColumns */}
+      <div className='flex w-full md:hidden'>
+        <div className='w-1/2'>
           <LeftColumn />
         </div>
-
-        <section className='flex w-full items-center justify-center border-2 border-cyan-900 p-4 py-20 text-white lg:w-3/5'>
-          <MainContent>{children}</MainContent>
-        </section>
-
-        <div className='hidden w-1/5 lg:block'>
+        <div className='w-1/2'>
           <RightColumn />
         </div>
       </div>
-
-      <section className='mt-4 w-full border-2 border-cyan-900 p-4'>
+      {/* Skills Section */}
+      <section className='w-full border-2 border-cyan-900 p-4'>
         <SkillsSection />
       </section>
     </div>
