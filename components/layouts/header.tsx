@@ -3,16 +3,13 @@ import Navbar from '../Navbar';
 
 const Header = () => {
   return (
-    <header className='grid w-full grid-cols-8 items-center md:grid-cols-12 '>
-      <div className='col-span-4'>
-        <Logo />
-      </div>
-      <div className='col-span-4 m-auto hidden md:block'>
-        <div className='flex items-center gap-[3rem]'>
-          <Navbar />
-        </div>
-      </div>
-    </header>
+    <div className='mx-auto flex max-w-screen-xl items-center justify-between px-4 py-2'>
+      <Logo />
+      <nav className='hidden lg:flex lg:items-center lg:gap-4'>
+        <Navbar />
+      </nav>
+    </div>
   );
 };
+
 export default Header;

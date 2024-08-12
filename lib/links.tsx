@@ -8,6 +8,11 @@ type NavLink = {
 
 const links: NavLink[] = [
   {
+    href: '/',
+    label: 'Home',
+    // icon: <Layers />,
+  },
+  {
     href: '/about',
     label: 'About',
     // icon: <Layers />,

@@ -1,9 +1,10 @@
 import Link from 'next/link';
+
 const Logo = () => {
   return (
-    <Link href='/' className='text-xl'>
-      <span className='cursor-pointer text-white'>SweeTTry</span>
-      <span className='font-bold text-green-400 '>.dev</span>
+    <Link href='/' className='cursor-pointer text-xl text-white'>
+      <span>SweeTTry</span>
+      <span className='font-bold text-green-400'>.dev</span>
     </Link>
   );
 };
