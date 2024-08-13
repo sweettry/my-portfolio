@@ -1,7 +1,6 @@
-'use client';
-
-import HeroLines from '@/public/assets/hero/hero-lines.png';
-import Image from 'next/image';
+import { bricolageGrotesque } from '@/app/ui/fonts';
+import { Button } from '../ui/button';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -9,26 +8,34 @@ export default function HeroSection() {
       <div className='mx-auto flex max-w-screen-xl flex-col items-center justify-center space-y-8'>
         {/* Text Content */}
         <div className='flex w-full flex-col items-center'>
-          <h1 className='text-center text-4xl font-bold'>
-            Welcome to Our Platform
+          <h1
+            className={`${bricolageGrotesque.className} text-center text-8xl font-bold`}
+          >
+            It's Dmitry
           </h1>
-          <p className='mt-4 text-center text-lg'>
-            Discover amazing features that will enhance your productivity and
-            help you achieve your goals faster.
+          <p
+            className={`${bricolageGrotesque.className} mt-4 text-center text-6xl font-bold`}
+          >
+            Full-Stack & Web3 Developer
           </p>
-          <div className='mt-6 flex flex-col items-center space-y-4'>
-            <a
-              href='#'
-              className='inline-block rounded bg-green-500 px-8 py-3 text-lg font-semibold text-white transition hover:bg-green-600'
-            >
-              Get Started
-            </a>
-            <a
-              href='#'
-              className='inline-block rounded bg-white px-8 py-3 text-lg font-semibold text-gray-900 transition hover:bg-gray-200'
-            >
-              Learn More
-            </a>
+          <p
+            className={`${bricolageGrotesque.className} mt-4 text-center text-xl font-bold`}
+          >
+            Passionate and detail-oriented frontend developer with a knack for
+            creating visually appealing and user-friendly web interfaces
+          </p>
+          <p
+            className={`${bricolageGrotesque.className} mt-4 text-center text-xl font-bold`}
+          >
+            Where creativity meets functionality.
+          </p>
+
+          <div className='mt-6 items-center space-x-16'>
+            <Button asChild variant='destructive'>
+              <Link href='/' className='flex items-center gap-2 text-white'>
+                <span className='capitalize'>contact me</span>
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

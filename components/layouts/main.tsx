@@ -20,7 +20,7 @@ const Main = ({ children }: MainContentProps) => {
           </div>
 
           {/* Main Content */}
-          <section className='flex flex-1 items-center justify-center border-2 border-cyan-900 p-4 py-20 text-white'>
+          <section className='flex flex-1 items-center justify-center p-4 py-20 text-white'>
             <MainContent>{children}</MainContent>
           </section>
 
@@ -40,7 +40,7 @@ const Main = ({ children }: MainContentProps) => {
         </div>
       </div>
       {/* Skills Section */}
-      <section className='w-full border-2 border-cyan-900 p-4'>
+      <section className='w-full p-4'>
         <SkillsSection />
       </section>
     </div>

@@ -3,11 +3,8 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layouts/header';
 import Main from '@/components/layouts/main';
-import LeftColumn from '@/components/LeftColumn';
-import MainContent from '@/components/MainContent';
-import RightColumn from '@/components/RightColumn';
 import Footer from '@/components/layouts/footer';
-
+import BackgroundImage from '@/app/ui/background';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -26,18 +23,18 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-background flex min-h-screen flex-col`}
       >
-        <header className='h-16 w-full shadow-sm'>
-          {/* Fixed height for header */}
+        <BackgroundImage />
+
+        {/* Content */}
+        <header className='z-10 h-16 w-full shadow-sm'>
           <Header />
         </header>
 
-        <main className='flex-grow'>
-          {/* Takes remaining space */}
+        <main className='z-10 flex-grow'>
           <Main>{children}</Main>
         </main>
 
-        <footer className='h-16 w-full border-t border-cyan-900 p-4'>
-          {/* Fixed height for footer */}
+        <footer className='z-10 h-16 w-full p-4'>
           <Footer />
         </footer>
       </body>
