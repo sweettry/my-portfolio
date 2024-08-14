@@ -1,3 +1,5 @@
+import { Separator } from '@/components/ui/separator';
+
 type MainContentProps = {
   children?: React.ReactNode;
 };
@@ -5,7 +7,9 @@ type MainContentProps = {
 const MainContent = ({ children }: MainContentProps) => {
   return (
     <div>
+      <Separator className='opacity-15' />
       {children || <div className='text-center'>No content available</div>}
+      <Separator className='opacity-15' />
     </div>
   );
 };

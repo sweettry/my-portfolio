@@ -1,43 +1,30 @@
 import { bricolageGrotesque } from '@/app/ui/fonts';
 import { Button } from '../ui/button';
 import Link from 'next/link';
-
 export default function HeroSection() {
   return (
-    <div className='w-full py-20 text-white'>
-      <div className='mx-auto flex max-w-screen-xl flex-col items-center justify-center space-y-8'>
-        {/* Text Content */}
-        <div className='flex w-full flex-col items-center'>
-          <h1
-            className={`${bricolageGrotesque.className} text-center text-8xl font-bold`}
-          >
-            It's Dmitry
-          </h1>
-          <p
-            className={`${bricolageGrotesque.className} mt-4 text-center text-6xl font-bold`}
-          >
-            Full-Stack & Web3 Developer
-          </p>
-          <p
-            className={`${bricolageGrotesque.className} mt-4 text-center text-xl font-bold`}
-          >
-            Passionate and detail-oriented frontend developer with a knack for
-            creating visually appealing and user-friendly web interfaces
-          </p>
-          <p
-            className={`${bricolageGrotesque.className} mt-4 text-center text-xl font-bold`}
-          >
-            Where creativity meets functionality.
-          </p>
-
-          <div className='mt-6 items-center space-x-16'>
-            <Button asChild variant='destructive'>
-              <Link href='/' className='flex items-center gap-2 text-white'>
-                <span className='capitalize'>contact me</span>
-              </Link>
-            </Button>
-          </div>
-        </div>
+    <div className='max-w-3xl space-y-12 px-6 py-12 text-center'>
+      <h1 className={`${bricolageGrotesque.className} mb-4 text-8xl font-bold`}>
+        It's Dmitry
+        <span className='mt-2 block font-sans text-5xl font-bold text-green-500'>
+          Full-Stack Developer
+        </span>
+        <span className='mt-2 block font-sans text-5xl italic'>
+          Exploring Web3
+        </span>
+      </h1>
+      <p className='font-sans text-lg text-gray-400'>
+        Passionate full-stack developer building cutting-edge decentralized apps
+        and visually stunning portfolios.
+      </p>
+      <div className='flex justify-center'>
+        <Button className='rounded-full bg-green-500 px-6 py-3 font-sans text-lg font-semibold text-white'>
+          <Link href='/' className='flex items-center gap-2 text-white'>
+            <span className='ml-2 capitalize'>
+              discover my work <span className='ml-2'>→</span>
+            </span>
+          </Link>
+        </Button>
       </div>
     </div>
   );

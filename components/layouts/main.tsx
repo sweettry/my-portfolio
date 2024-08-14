@@ -2,7 +2,6 @@ import LeftColumn from '@/components/LeftColumn';
 import MainContent from '@/components/MainContent';
 import RightColumn from '@/components/RightColumn';
 import SkillsSection from '../sections/SkillsSection';
-
 type MainContentProps = {
   children?: React.ReactNode;
 };
