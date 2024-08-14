@@ -4,7 +4,9 @@ import Link from 'next/link';
 export default function HeroSection() {
   return (
     <div className='max-w-3xl space-y-12 px-6 py-12 text-center'>
-      <h1 className={`${bricolageGrotesque.className} mb-4 text-8xl font-bold`}>
+      <h1
+        className={`${bricolageGrotesque.className} mb-4 text-8xl font-bold text-white`}
+      >
         It's Dmitry
         <span className='mt-2 block font-sans text-5xl font-bold text-green-500'>
           Full-Stack Developer

@@ -5,7 +5,6 @@ import Header from '@/components/layouts/header';
 import Main from '@/components/layouts/main';
 import Footer from '@/components/layouts/footer';
 import BackgroundImage from '@/app/ui/background';
-import SkillsSection from '@/components/sections/SkillsSection';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -21,11 +20,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className='flex min-h-screen flex-col'>
-        <Header />
-        <Main>{children}</Main>
-        <SkillsSection />
-        <Footer />
+      <body
+        className={`${inter.className} bg-background flex min-h-screen flex-col`}
+      >
+        <BackgroundImage />
+
+        {/* Content */}
+        <header className='z-10 h-16 w-full shadow-sm'>
+          <Header />
+        </header>
+
+        <main className='z-10 flex-grow'>
+          <Main>{children}</Main>
+        </main>
+
+        <footer className='z-10 h-16 w-full p-4'>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

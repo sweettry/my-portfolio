@@ -2,7 +2,7 @@ import skills from '@/lib/skills';
 
 const SkillsSection = () => {
   return (
-    <div className='mx-auto max-w-screen-xl px-4'>
+    <div className='mx-auto max-w-screen-xl px-4 py-6'>
       <h2 className='mb-6 text-center text-2xl font-bold text-white'>Stack</h2>
       <div className='flex flex-wrap justify-center space-x-4'>
         {skills.map((skill, index) => (

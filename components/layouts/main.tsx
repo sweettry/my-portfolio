@@ -1,48 +1,34 @@
 import LeftColumn from '@/components/LeftColumn';
 import MainContent from '@/components/MainContent';
 import RightColumn from '@/components/RightColumn';
-import SkillsSection from '../sections/SkillsSection';
 type MainContentProps = {
   children?: React.ReactNode;
 };
 
 const Main = ({ children }: MainContentProps) => {
   return (
-    <div className='flex w-full flex-col'>
-      {/* Hero Section */}
-      <div className='flex w-full flex-col lg:flex-row'>
-        {/* Columns container */}
-        <div className='flex h-[calc(100vh-16rem)] w-full flex-row'>
-          {/* Left Column */}
-          <div className='hidden lg:block lg:w-1/5'>
-            <LeftColumn />
-          </div>
-
-          {/* Main Content */}
-          <section className='flex flex-1 items-center justify-center p-4 py-20 text-white'>
-            <MainContent>{children}</MainContent>
-          </section>
-
-          {/* Right Column */}
-          <div className='hidden lg:block lg:w-1/5'>
-            <RightColumn />
-          </div>
-        </div>
+    <main className='grid flex-1 grid-rows-[1fr,auto] gap-6 md:grid-cols-3 md:grid-rows-[1fr] md:pt-24'>
+      <div className='hidden h-[500px]  md:block'>
+        <LeftColumn />
       </div>
-      {/* SmallScreenColumns */}
-      <div className='flex w-full md:hidden'>
-        <div className='w-1/2'>
+
+      <div className='h-[500px]'>
+        <MainContent>{children}</MainContent>
+      </div>
+
+      <div className='hidden h-[500px] md:block'>
+        <RightColumn />
+      </div>
+
+      <div className='grid h-[500px] grid-cols-2 gap-6 md:hidden'>
+        <div>
           <LeftColumn />
         </div>
-        <div className='w-1/2'>
+        <div>
           <RightColumn />
         </div>
       </div>
-      {/* Skills Section */}
-      <section className='w-full p-4'>
-        <SkillsSection />
-      </section>
-    </div>
+    </main>
   );
 };
 
