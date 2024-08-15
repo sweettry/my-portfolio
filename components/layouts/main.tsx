@@ -1,13 +1,14 @@
 import LeftColumn from '@/components/LeftColumn';
 import MainContent from '@/components/MainContent';
 import RightColumn from '@/components/RightColumn';
+import SkillsSection from '../sections/SkillsSection';
 type MainContentProps = {
   children?: React.ReactNode;
 };
 
 const Main = ({ children }: MainContentProps) => {
   return (
-    <main className='container mx-auto flex-1 py-4 md:pt-24'>
+    <main className='md:pt-18 container mx-auto flex-1 py-4'>
       <section className='grid grid-cols-1 gap-4 md:grid-cols-[1fr,6fr,1fr]'>
         {/* Column 1 - Hidden on small screens */}
         <div className='hidden md:block'>
@@ -15,7 +16,7 @@ const Main = ({ children }: MainContentProps) => {
         </div>
 
         {/* Column 2 - Always visible */}
-        <div className='h-[700px]'>
+        <div className='h-[720px]'>
           <MainContent>{children}</MainContent>
         </div>
 
@@ -33,6 +34,9 @@ const Main = ({ children }: MainContentProps) => {
           <RightColumn />
         </div>
       </section>
+      {/* <section className=''>
+        <SkillsSection />
+      </section> */}
     </main>
   );
 };
