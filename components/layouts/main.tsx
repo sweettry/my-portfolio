@@ -16,7 +16,7 @@ const Main = ({ children }: MainContentProps) => {
         </div>
 
         {/* Column 2 - Always visible */}
-        <div className='h-[720px]'>
+        <div className='min-h-[500px] md:h-[500px]'>
           <MainContent>{children}</MainContent>
         </div>
 
@@ -34,9 +34,9 @@ const Main = ({ children }: MainContentProps) => {
           <RightColumn />
         </div>
       </section>
-      {/* <section className=''>
+      <section className=''>
         <SkillsSection />
-      </section> */}
+      </section>
     </main>
   );
 };

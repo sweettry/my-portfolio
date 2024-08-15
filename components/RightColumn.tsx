@@ -1,6 +1,6 @@
 'use client';
-import { ArrowRight } from 'lucide-react'; // Assuming you have a right arrow icon
-import useNavigation from '@/lib/hooks/useNavigation'; // Adjust path as needed
+import { ArrowRight } from 'lucide-react';
+import useNavigation from '@/lib/hooks/useNavigation';
 
 const RightColumn = () => {
   const navigate = useNavigation();
