@@ -7,27 +7,32 @@ type MainContentProps = {
 
 const Main = ({ children }: MainContentProps) => {
   return (
-    <main className='grid flex-1 grid-rows-[1fr,auto] gap-6 md:grid-cols-3 md:grid-rows-[1fr] md:pt-24'>
-      <div className='hidden h-[500px]  md:block'>
-        <LeftColumn />
-      </div>
+    <main className='container mx-auto flex-1 py-4 md:pt-24'>
+      <section className='grid grid-cols-1 gap-4 md:grid-cols-[1fr,6fr,1fr]'>
+        {/* Column 1 - Hidden on small screens */}
+        <div className='hidden md:block'>
+          <LeftColumn />
+        </div>
 
-      <div className='h-[500px]'>
-        <MainContent>{children}</MainContent>
-      </div>
+        {/* Column 2 - Always visible */}
+        <div className='h-[700px]'>
+          <MainContent>{children}</MainContent>
+        </div>
 
-      <div className='hidden h-[500px] md:block'>
-        <RightColumn />
-      </div>
+        {/* Column 3 - Hidden on small screens */}
+        <div className='hidden md:block'>
+          <RightColumn />
+        </div>
+      </section>
 
-      <div className='grid h-[500px] grid-cols-2 gap-6 md:hidden'>
+      <section className='grid grid-cols-2 md:hidden'>
         <div>
           <LeftColumn />
         </div>
         <div>
           <RightColumn />
         </div>
-      </div>
+      </section>
     </main>
   );
 };

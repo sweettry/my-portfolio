@@ -3,7 +3,7 @@ import { Button } from '../ui/button';
 import Link from 'next/link';
 export default function HeroSection() {
   return (
-    <div className='max-w-3xl space-y-12 px-6 py-12 text-center'>
+    <div className='mx-auto max-w-3xl space-y-12 px-6 py-12 text-center'>
       <h1
         className={`${bricolageGrotesque.className} mb-4 text-8xl font-bold text-white`}
       >

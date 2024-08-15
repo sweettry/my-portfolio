@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 const ProjectsPage = () => {
   return (
-    <div className='max-w-3xl space-y-12 px-6 py-12 text-center'>
+    <div className='mx-auto max-w-3xl space-y-12 px-6 py-12 text-center'>
       <h1 className={`${bricolageGrotesque.className} mb-4 text-8xl font-bold`}>
         It's Dmitry
         <span className='mt-2 block font-sans text-5xl font-bold text-green-500'>
