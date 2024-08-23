@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <div className='mx-auto space-y-12 px-6 py-12 text-center'>
       <h1 className='bold mt-2 block bg-[radial-gradient(138.06%_1036.51%_at_95.25%_-2.54%,_#7ED4FD_14.06%,#709DF7_51.02%,#4D78EF_79.09%)] bg-clip-text pt-6 text-left font-sans text-5xl italic leading-[1.2] tracking-tighter text-transparent sm:text-center sm:text-[4rem] sm:leading-[4.75rem] md:text-7xl lg:text-left'>
-        "Make your ideas look awesome..."
+        Make your ideas look awesome...
       </h1>
 
       <h2
