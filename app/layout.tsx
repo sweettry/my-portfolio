@@ -21,18 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className='flex min-h-screen flex-col text-white'>
+      <body className='bg-custom-gradient relative flex min-h-screen flex-col text-white'>
         <BackgroundImage />
         <Header />
-
-        <Main>{children}</Main>
-
-        {/* Footer */}
-        <footer className='bg-gray-800 p-4 text-white'>
-          <div className='container mx-auto text-center'>
-            <p>&copy; 2024 My Website. All rights reserved.</p>
-          </div>
-        </footer>
+        <Main>
+          {children || <div className='text-center'>No content available</div>}
+        </Main>
+        <Footer />
       </body>
     </html>
   );

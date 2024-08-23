@@ -1,14 +1,14 @@
 'use client';
 import { Button } from './ui/button';
 import Link from 'next/link';
-import links from '@/lib/links';
+import links from '@/lib/project-links';
 import { usePathname } from 'next/navigation';
 
-const Navbar = () => {
+const ProjectsNavbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className='flex items-center gap-12'>
+    <div className='flex flex-row items-center gap-12 md:flex-col'>
       {links.map((link) => (
         <Button
           asChild
@@ -23,4 +23,4 @@ const Navbar = () => {
     </div>
   );
 };
-export default Navbar;
+export default ProjectsNavbar;
