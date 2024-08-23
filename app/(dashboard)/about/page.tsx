@@ -14,7 +14,7 @@ const AboutPage = () => {
           <div className='prose'>
             <h2 className='mt-4 text-xl font-semibold'>About Me</h2>
             <p className='text-left'>
-              Hi, I'm John Doe, a passionate web developer with a love for
+              Hi, I am John Doe, a passionate web developer with a love for
               creating beautiful and functional websites. I have been working in
               the industry for the past 5 years, and during this time, I have
               honed my skills in various technologies and frameworks.
