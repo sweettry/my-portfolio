@@ -6,13 +6,13 @@ function BackgroundImage() {
         width='100%'
         height='100%'
         viewBox='0 0 1743 1744'
-        preserveAspectRatio='none'
+        preserveAspectRatio='none' // Scale to fill the container completely
         className='h-full w-full'
       >
-        {/* Radial Gradient Background */}
-        <rect width='100%' height='100%' fill='url(#radial-gradient)' />
-
-        {/* Original Background Lines */}
+        <path
+          fill='url(#paint0_linear_3143_1642)'
+          d='M-103 722.25H1739V1938.25H-103z'
+        ></path>
         <path
           fill='#0E1827'
           stroke='url(#paint1_linear_3143_1642)'
@@ -37,23 +37,18 @@ function BackgroundImage() {
           d='M474.322 1265.08L1805.06 3570.95 2779.71-66.502 474.322 1265.08z'
           opacity='0.21'
         ></path>
-
-        {/* Definitions */}
         <defs>
-          <radialGradient
-            id='radial-gradient'
-            cx='50%'
-            cy='0%'
-            r='145.05%'
-            fx='50%'
-            fy='0%'
+          <linearGradient
+            id='paint0_linear_3143_1642'
+            x1='818'
+            x2='818'
+            y1='722.25'
+            y2='1525.08'
             gradientUnits='userSpaceOnUse'
           >
-            <stop offset='0%' stopColor='#1D2B41' />
-            <stop offset='57.38%' stopColor='#020509' />
-            <stop offset='88.16%' stopColor='#0F1A29' />
-          </radialGradient>
-
+            <stop stopColor='#0E1827' stopOpacity='0'></stop>
+            <stop offset='1' stopColor='#0E1827'></stop>
+          </linearGradient>
           <linearGradient
             id='paint1_linear_3143_1642'
             x1='841.476'

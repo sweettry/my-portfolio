@@ -13,9 +13,12 @@ const Navbar = () => {
         <Button
           asChild
           key={link.href}
-          variant={pathname === link.href ? 'destructive' : 'link'}
+          variant={pathname === link.href ? 'navPrimary' : 'navSecondary'}
         >
-          <Link href={link.href} className='flex items-center gap-2 text-white'>
+          <Link
+            href={link.href}
+            className='flex items-center gap-2 text-xl text-white'
+          >
             <span className='capitalize'>{link.label}</span>
           </Link>
         </Button>

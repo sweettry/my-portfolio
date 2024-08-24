@@ -36,7 +36,7 @@ const layout = async ({
                       height={32}
                     />
                     <div className='min-w-0'>
-                      <p className='truncate text-sm font-semibold md:text-base'>
+                      <p className='truncate text-sm font-semibold text-black md:text-base'>
                         {project.title}
                       </p>
                       <p className='hidden text-sm text-gray-500 sm:block'>
