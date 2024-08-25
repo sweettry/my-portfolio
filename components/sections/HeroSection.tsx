@@ -9,14 +9,14 @@ export default function HeroSection() {
     <section className='container mx-auto h-[65vh] max-w-6xl px-4 md:px-6'>
       <div className='grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16'>
         <div className='flex flex-col justify-center space-y-4'>
-          <h1 className='text-3xl font-bold tracking-tighter text-sky-400 sm:text-4xl md:text-5xl xl:text-6xl/none'>
+          <h1 className='text-3xl font-bold tracking-tighter text-sky-500 sm:text-4xl md:text-5xl xl:text-6xl/none'>
             Make your ideas look awesome...
           </h1>
-          <p className='text-muted-foreground max-w-[600px] pt-4 text-sky-200 md:text-xl'>
+          <p className='text-muted-foreground max-w-[600px] pt-4 text-sky-300 md:text-xl'>
             Passionate about building cutting-edge and visually stunning apps.
           </p>
           <div className='flex flex-col gap-2 pt-6 min-[400px]:flex-row'>
-            <Button className='rounded-full bg-sky-300 px-6 py-4 font-semibold text-slate-900 hover:bg-sky-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900'>
+            <Button className='rounded-full bg-sky-200 px-6 py-4 font-semibold text-slate-900 hover:bg-sky-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900'>
               <Link href='/' className='flex items-center gap-2 text-white'>
                 <span className='ml-2 text-lg capitalize text-slate-900'>
                   contact me <span className='ml-2'>→</span>
