@@ -21,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className='bg-custom-gradient relative flex min-h-screen flex-col text-white'>
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/zgj8xan.css"/>
+      </head>
+      <body className='bg-custom-gradient relative flex min-h-screen flex-col text-white font-font-1'>
         <BackgroundImage />
         <Header />
         <Main>

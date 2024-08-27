@@ -12,16 +12,16 @@ import {
 } from '@/components/ui/card';
 import clsx from 'clsx';
 import Image from 'next/image';
+import { projects } from '@/lib/placeholder-data';
 const layout = async ({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  const projects = await fetchProjects();
+  // const projects = await fetchProjects();
 
   return (
     <section
-      suppressHydrationWarning
       className='container mx-auto h-[65vh] max-w-6xl px-4 text-center md:px-6'
     >
       <div className='grid gap-8 text-white md:grid-cols-[1fr,2fr] md:gap-12 lg:gap-16'>

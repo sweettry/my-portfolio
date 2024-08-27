@@ -19,6 +19,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        'font-1': ['Loos Normal Regular'],
+        'font-2': ['your-font-2-name'],
+      },
       colors: {
         'curious-blue': {
           DEFAULT: '#2787D9',

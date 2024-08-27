@@ -15,7 +15,7 @@ import MyImage from '@/public/shin-thant.png';
 const AboutPage = () => {
   return (
     <section className='container mx-auto h-[65vh] max-w-6xl px-4 text-center md:px-6'>
-      <div className='grid gap-8 text-white md:grid-cols-[1fr,2fr] md:gap-12 lg:gap-16'>
+      <div className='grid gap-8 text-white md:grid-cols-[2fr,3fr] md:gap-12 lg:gap-16'>
         {/* First Card: About Me */}
         <Card className='bg-[radial-gradient(145.05%_100%_at_50%_0%,#1D2B41_0%,#0B1627_57.38%,#142133_88.16%)] ring-1 ring-white/[0.15]'>
           <CardHeader className='rounded-t-lg'>
