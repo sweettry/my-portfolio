@@ -23,7 +23,7 @@ const AboutPage = () => {
           </CardHeader>
           <CardContent>
             <CardDescription className='text-left text-lg text-slate-400'>
-              Hi, I am John Does, a passionate web developer with a love for
+              Hi, I am John Doess, a passionate web developer with a love for
               creating beautiful and functional websites. I have been working in
               the industry for the past 5 years, and during this time, I have
               honed my skills in various technologies and frameworks.
