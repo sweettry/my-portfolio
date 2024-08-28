@@ -1,7 +1,7 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import { usePathname, useRouter } from 'next/navigation';
-import {projects} from '@/lib/placeholder-data';
+import { projects } from '@/lib/placeholder-data';
 
 const ProjectDetailPage = () => {
   const pathname = usePathname();
@@ -16,9 +16,9 @@ const ProjectDetailPage = () => {
   }
 
   return (
-    <div className="project-detail-page">
-      <p className="text-gray-700">{project.description}</p>
-      <div className="project-content mt-6">
+    <div className='project-detail-page'>
+      <p className='text-gray-700'>{project.description}</p>
+      <div className='project-content mt-6'>
         {/* Add more details about the project here */}
       </div>
     </div>
