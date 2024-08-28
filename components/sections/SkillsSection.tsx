@@ -12,20 +12,20 @@ import {
 // import { TbBrandFoundry } from 'react-icons/tb';
 const SkillsSection = () => {
   const skills = [
-    { name: 'JavaScript', icon: SiJavascript, color: 'text-yellow-400' },
-    { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-600' },
-    { name: 'Python', icon: SiPython, color: 'text-blue-500' },
+    { name: 'JavaScript', icon: SiJavascript, color: 'text-white' },
+    { name: 'TypeScript', icon: SiTypescript, color: 'text-white' },
+    { name: 'Python', icon: SiPython, color: 'text-white' },
     { name: 'Next.js', icon: SiNextdotjs, color: 'text-white' },
-    { name: 'React', icon: SiReact, color: 'text-blue-400' },
-    { name: 'TailwindCSS', icon: SiTailwindcss, color: 'text-teal-500' },
-    { name: 'Solidity', icon: SiSolidity, color: 'text-gray-600' },
+    { name: 'React', icon: SiReact, color: 'text-white' },
+    { name: 'TailwindCSS', icon: SiTailwindcss, color: 'text-white' },
+    { name: 'Solidity', icon: SiSolidity, color: 'text-white' },
     // { name: 'Foundry', icon: TbBrandFoundry, color: 'text-orange-500' },
   ];
 
   return (
     <section className='py-12'>
       <div className='container mx-auto px-4'>
-        <Separator className='mb-8 opacity-50' />
+        {/* <Separator className='mb-8 opacity-50' /> */}
         <div className='flex flex-wrap items-center justify-center gap-8 md:gap-36'>
           {skills.map((skill) => (
             <div key={skill.name} className='flex flex-col items-center'>
